@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  list-style: none;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgb(47, 111, 248);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+nav ul li{
+   padding: 20px;
+}
+nav ul li a{
+   text-decoration: none;
+}
+.active{
+  background-color: rgb(255, 2, 2);
+}
+.navCartItemCount{
+  background-color: yellow;
+  border-radius: 50%;
+  padding: 5px 10px; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2{
+  text-align: center;
+  margin: 40px 0;
+}
+.form--wrap{
+  text-align: center;
+} 
+.form--wrap span{
+  color: red; 
+} 
+.form-control{ 
+  padding: 7px;
+  width: 250px;
+}
+.btn{
+  padding: 7px;
+  background-color: rgb(240, 72, 255);
+}
+
+.table{
+  margin: 20px 100px;
+  border: 1px solid black;
+} 
+.table tr td{ 
+  padding: 10px 30px;
+}
+.product-wrap{ 
+  margin: 20px 50px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.product-wrap .product{
+  width: 350px; 
+  border: 1px solid black;
+}
+.product-wrap .product .product-image{
+  height: 200px; 
+  width: 100%; 
+}
+.product-wrap .product .product-title h4{
+  font-size: 20px; 
+  margin: 10px auto;
+  text-align: center;
+}
+.product-wrap .product .product-price{
+  font-size: 20px; 
+  margin: 10px auto;
+  text-align: center;
+}
+.product-wrap .product .product-add-to-cart{
+  font-size: 20px;  
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  background-color: red;
+  padding: 10px;
+}
+.product-wrap .product .product-remove-cart-item{
+  font-size: 20px;  
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  background-color: orange;
+  padding: 10px;
+}
+.product-wrap .product .product-add-to-cart .count{
+  font-size: 15px;  
+  text-align: center;
+  background-color: yellow;
+  border-radius: 50%;
+  padding: 5px 10px;
 }
