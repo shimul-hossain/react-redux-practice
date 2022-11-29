@@ -54,10 +54,10 @@ h2{
   margin: 20px 50px;
   display:flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 .product-wrap .product{
   width: 350px; 
+  padding: 5px;
   border: 1px solid black;
 }
 .product-wrap .product .product-image{
