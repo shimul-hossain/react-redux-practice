@@ -21,8 +21,8 @@ function Users() {
         </thead>
         <tbody>
         {users.data.map((user) => (
-            <tr className={user.id == user_id ? 'active':''} key={user.id}>
-            <td scope="row">{user.id}</td>
+            <tr className={user.id === user_id ? 'active':''} key={user.id}>
+            <td>{user.id}</td>
             <td>{user.name}</td>
             <td>{user.username}</td>
             <td>{user.email}</td>

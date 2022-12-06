@@ -1,12 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import '../App.css';
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 
 function Navbar() {
   const user_id = useSelector(state => state.login.user_id);
   const cartItems = useSelector(state => state.cart.items);
-  const dispatch = useDispatch();
 
 
   return (

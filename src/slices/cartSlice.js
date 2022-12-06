@@ -8,7 +8,7 @@ export const cartSlice = createSlice({
     }, 
     reducers : {
         updateCart : (state, action) => { 
-            let item = state.items.find(item => item.id == action.payload)
+            let item = state.items.find(item => item.id === action.payload)
             if(item){ 
                 item.quantity += 1;
             }else{ 
@@ -16,7 +16,7 @@ export const cartSlice = createSlice({
             }
         },
         removeCartItem : (state, action) => {
-            let item = state.items.find(item => item.id == action.payload);
+            let item = state.items.find(item => item.id === action.payload);
             state.items.splice(state.items.indexOf(item), 1);
         }
     }

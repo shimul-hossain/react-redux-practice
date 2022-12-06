@@ -1,4 +1,3 @@
-import React from 'react'
 import axios from 'axios'   
 export async function ContactFormValidation({request}) {
     let error = {};
@@ -35,7 +34,7 @@ export async function ContactFormValidation({request}) {
         return axios.get('https://jsonplaceholder.typicode.com/users');
       }
       let users = (await getUser()).data
-      let user = users.find(user => user.username == data.get('name'))
+      let user = users.find(user => user.username === data.get('name'))
       if (user){
         response.error = false
         response.user_id = user.id

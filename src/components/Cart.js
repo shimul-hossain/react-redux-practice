@@ -8,7 +8,7 @@ function Cart() {
     let dispatch = useDispatch();
     let cartItems = useSelector(item => item.cart.items);
     function getSingleProduct(id){
-        let data = products.data.products.find(item => item.id == id);
+        let data = products.data.products.find(item => item.id === id);
         return data
     }
     

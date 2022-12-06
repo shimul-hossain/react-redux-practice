@@ -21,7 +21,7 @@ function Products() {
                         <span className='price'>$ {product.price}</span>
                     </div>
                     <button className="product-add-to-cart" onClick={() => dispatch(updateCart(product.id))}>
-                        <span>Add To cart </span> <span className="count">{cartItem.find(item => item.id == product.id) ? cartItem.find(item => item.id == product.id).quantity : 0}</span>
+                        <span>Add To cart </span> <span className="count">{cartItem.find(item => item.id === product.id) ? cartItem.find(item => item.id === product.id).quantity : 0}</span>
                     </button>
                 </div>
             ))}
