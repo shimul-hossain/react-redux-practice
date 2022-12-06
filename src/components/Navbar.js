@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../App.css';
 import { useSelector } from 'react-redux'
 
@@ -12,28 +12,28 @@ function Navbar() {
     <nav>
         <ul>
         <li>
-            <Link to={'/'} >Home</Link>
+            <NavLink to={'/'} >Home</NavLink>
         </li>
         <li>
-            <Link to={'/users'} >Users</Link>
+            <NavLink to={'/users'} >Users</NavLink>
         </li>
         <li>
-            <Link to={'/about'} >About</Link>
+            <NavLink to={'/about'} >About</NavLink>
         </li>
         <li>
-            <Link to={'/products'} >Products</Link>
+            <NavLink to={'/products'} >Products</NavLink>
         </li>
         <li>
-            <Link to={'/contact'} >Contact</Link>
+            <NavLink to={'/contact'} >Contact</NavLink>
         </li>
         <li>
            {user_id ? 
-            <Link to={'/logout'} >Logout</Link>
-            :<Link to={'/login'} >Login</Link>
+            <NavLink to={'/logout'} >Logout</NavLink>
+            :<NavLink to={'/login'} >Login</NavLink>
           }
             </li>
             <li>
-              <Link to = {'/cart'} >Cart <span className='navCartItemCount'>{cartItems.length}</span></Link>
+              <NavLink to = {'/cart'} >Cart <span className='navCartItemCount'>{cartItems.length}</span></NavLink>
             </li>
         </ul>
     </nav>    

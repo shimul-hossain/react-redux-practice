@@ -16,7 +16,7 @@ nav ul li a{
    text-decoration: none;
 }
 .active{
-  background-color: rgb(255, 2, 2);
+  text-decoration: underline;
 }
 .navCartItemCount{
   background-color: yellow;
